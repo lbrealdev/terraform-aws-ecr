@@ -1,16 +1,7 @@
 # ECR variables
 variable "names" {
-  type = map(string)
-  default = {
-    alias          = "ecrdevcaucionalias"
-    clientes       = "ecrdevcaucionclientes"
-    informes       = "ecrdevcauciongarantiasinformes"
-    garantias      = "ecrdevcauciongarantias"
-    tipologias     = "ecrdevcauciontipologias"
-    informes_asinc = "ecrdevcauciongarantiasinformesasinc"
-    authentication = "ecrdevcaucionglobalauthentication"
-    cargos_abo     = "ecrdevcaucioncargosabonos"
-  }
+  description = "Names of the repositories."
+  type        = map(string)
 }
 
 variable "config" {

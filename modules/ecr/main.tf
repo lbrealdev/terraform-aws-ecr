@@ -1,5 +1,6 @@
 resource "aws_ecr_repository" "ecr" {
   for_each             = { for name in var.names : name => name }
+
   name                 = each.value
   image_tag_mutability = lookup(var.config[0], "mutable", null)
 
