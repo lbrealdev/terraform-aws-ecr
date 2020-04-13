@@ -14,6 +14,6 @@
 
 variable "ecr_repositories" {
   description = "Names of the repositories."
-  type        = list(string)
+  type        = map(string)
   default     = null
 }
